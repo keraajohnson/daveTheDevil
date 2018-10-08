@@ -1,0 +1,43 @@
+.gallery {
+    background-color: black;
+    background-image: url(/assets/images/BkgRedWood.png);
+    height: 100vh;
+    position: relative;
+            .pen,
+            .cup{
+                position: absolute;
+                // z-index: 10;
+            }
+            .pen {
+                bottom: 40px;
+                left: 50px;
+                img {
+                    width: 70%;
+                }
+            }
+            .cup {
+                right: -70px;
+                top: 30px;
+                img {
+                    width: 55%;
+                    margin: auto;
+                }
+            }
+            .swiper-container {
+                .swiper-wrapper {
+                    margin-top: 70px;
+                    position: relative;
+                    .swiper-slide {
+                        img {
+                            width: 70%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                .swiper-button-white {
+                    width: 20%;
+                }
+            }
+        }
+
+

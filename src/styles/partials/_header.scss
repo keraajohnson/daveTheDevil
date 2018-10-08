@@ -1,0 +1,39 @@
+header {
+    background: black;
+    padding: 1px;
+    height: 100vh;
+        .navigation {
+            nav {
+                .menu {
+
+                }
+                ul {
+                    li {
+                        a{
+
+                        }
+                    }
+                }
+            }
+        }
+        .hero {
+            h2 {
+                @include bodyText(1.8rem);
+                text-align: center;
+                color: white;
+                    span {
+                        display: block;
+                    }
+            }
+            .daveImage {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 25px;
+            }
+            .tagline {
+                width: 50%;
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+        }
+}
