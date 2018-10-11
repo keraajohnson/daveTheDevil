@@ -1,0 +1,44 @@
+footer {
+    padding: 20px 0;
+    .container {
+        @include displayFlex;
+        width: 80%;
+            .sponsor, 
+            .copyright {
+                width: 75%;
+            }
+            .sponsor {
+                @include displayFlex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                    p {
+                        @include bodyText(1.2rem);
+                        letter-spacing: 1px;
+                        font-weight: 400px;
+                    }
+                    .imgCon {
+                        img {
+                            width: 30%;
+                            margin-left: 10px;
+                        }
+                    }
+            }
+            .copyright {
+                @include displayFlex;
+                align-items: center;
+                justify-content: flex-end; 
+                    p {
+                        @include bodyText(1.2rem);
+                        letter-spacing: 1px;
+                        font-weight: 400px;
+                    }
+                    .imgCon {
+                        img {
+                            width: 65%;
+                            margin: 0 auto;
+                        }
+                    }
+            }
+    }
+}

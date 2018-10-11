@@ -20,13 +20,13 @@
                 }
             }
             .aboutDave {
-                width: 32%;
+                width: 31%;
                 p {
-                    @include bodyText(1.2rem);
+                    @include bodyText(1.5rem);
                     color: white;
                     text-transform: unset;
                     text-align: center;
-                    line-height: 30px;
+                    line-height: 35px;
                         span {
                             display: block;
                         }

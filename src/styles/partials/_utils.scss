@@ -18,7 +18,7 @@ img {
     max-width: 100%;
 }
 
-$red: #ed3833;
+$red: #ED1D23;
 
 @mixin displayFlex {
     display: flex;
@@ -30,6 +30,6 @@ $red: #ed3833;
     font-weight: 300;
     text-transform: uppercase;
     font-size: $fontSize;
-    letter-spacing: 5px;
-    line-height: 35px;
+    letter-spacing: 1.8px;
+    line-height: 38px;
 }

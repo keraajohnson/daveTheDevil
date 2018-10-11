@@ -1,18 +1,20 @@
 .gallery {
     background-color: black;
-    background-image: url(/assets/images/BkgRedWood.png);
+    background-image: url('../assets/images/redwood.png');
     height: 100vh;
     position: relative;
+    overflow: hidden;
             .pen,
-            .cup{
+            .cup, 
+            .arrow{
                 position: absolute;
-                // z-index: 10;
+                overflow: hidden;
             }
             .pen {
                 bottom: 40px;
-                left: 50px;
+                left: 70px;
                 img {
-                    width: 70%;
+                    width:70%;
                 }
             }
             .cup {
@@ -22,8 +24,16 @@
                     width: 55%;
                     margin: auto;
                     overflow: hidden;
-                }
+                }      
             }
+            .arrow {
+                bottom: 60px;
+                right: 225px;
+                z-index: 15;
+                    img {
+                        width: 80%;
+                    }
+            }  
             .swiper-container {
                 .swiper-wrapper {
                     margin-top: 70px;
@@ -37,6 +47,7 @@
                 }
                 .swiper-button-white {
                     width: 20%;
+                    margin-top: 20px;
                 }
             }
         }

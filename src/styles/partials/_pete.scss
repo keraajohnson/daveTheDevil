@@ -1,6 +1,7 @@
 .pete {
-    background-color: black;
+    background-image: url('../assets/images/BlackPaintSmudgeRedBgk.png');
     padding: 50px 0;
+    background-size: cover;
     .container {
         width: 100%;
         @include displayFlex;
@@ -21,7 +22,7 @@
             }
         }
         .boxTwo {
-            width: 40%;
+            width: 55%;
             p {
                 @include bodyText(1.5rem);
                 color: white;
@@ -32,7 +33,7 @@
             }
             a {
                 img {
-                    width: 13%;
+                    width: 9%;
                     margin: 15px auto;
                 }
             }

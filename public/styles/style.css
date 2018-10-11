@@ -148,32 +148,37 @@ img {
   max-width: 100%; }
 
 header {
-  background: black;
+  background-color: black;
+  background-image: url("../assets/images/BkgRedSplatter.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 1px;
   height: 100vh;
   padding: 30px 0; }
   header .navigation nav {
     display: flex;
-    justify-content: space-between; }
-    header .navigation nav .menu img {
-      width: 60%; }
+    justify-content: space-between;
+    padding-bottom: 35px; }
+    header .navigation nav .fullMenu img {
+      width: 60%;
+      cursor: pointer; }
     header .navigation nav .icons ul {
       display: flex;
       align-items: center; }
       header .navigation nav .icons ul li {
         list-style: none;
-        margin: 0 5px; }
+        margin: 0 3px; }
         header .navigation nav .icons ul li a img {
-          width: 80%; }
-        header .navigation nav .icons ul li a .mail {
           width: 60%; }
+        header .navigation nav .icons ul li a .mail {
+          width: 50%; }
   header .hero h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.8rem;
-    letter-spacing: 5px;
-    line-height: 35px;
+    letter-spacing: 1.8px;
+    line-height: 38px;
     text-align: center;
     color: white; }
     header .hero h2 span {
@@ -187,17 +192,54 @@ header {
     margin: 0 auto;
     margin-top: 40px; }
 
+.navMobile {
+  display: none; }
+  .navMobile .menu {
+    display: none;
+    background: #ED1D23;
+    width: 15%;
+    height: 50vh;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 180px;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 10; }
+    .navMobile .menu .icon {
+      font-size: 3rem;
+      color: black; }
+    .navMobile .menu li {
+      list-style: none;
+      padding: 8px; }
+      .navMobile .menu li a {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 2rem;
+        letter-spacing: 1.8px;
+        line-height: 38px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        transition: color 0.5s ease; }
+        .navMobile .menu li a:hover {
+          color: black; }
+
 .gallery {
   background-color: black;
-  background-image: url(/assets/images/BkgRedWood.png);
+  background-image: url("../assets/images/redwood.png");
   height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .gallery .pen,
-  .gallery .cup {
-    position: absolute; }
+  .gallery .cup,
+  .gallery .arrow {
+    position: absolute;
+    overflow: hidden; }
   .gallery .pen {
     bottom: 40px;
-    left: 50px; }
+    left: 70px; }
     .gallery .pen img {
       width: 70%; }
   .gallery .cup {
@@ -207,6 +249,12 @@ header {
       width: 55%;
       margin: auto;
       overflow: hidden; }
+  .gallery .arrow {
+    bottom: 60px;
+    right: 225px;
+    z-index: 15; }
+    .gallery .arrow img {
+      width: 80%; }
   .gallery .swiper-container .swiper-wrapper {
     margin-top: 70px;
     position: relative; }
@@ -214,7 +262,8 @@ header {
       width: 70%;
       margin: 0 auto; }
   .gallery .swiper-container .swiper-button-white {
-    width: 20%; }
+    width: 20%;
+    margin-top: 20px; }
 
 .about {
   background-color: black;
@@ -231,24 +280,25 @@ header {
         width: 45%;
         margin: 0 auto; }
     .about .container .aboutDave {
-      width: 32%; }
+      width: 31%; }
       .about .container .aboutDave p {
         font-family: 'Rubik', sans-serif;
         font-weight: 300;
         text-transform: uppercase;
-        font-size: 1.2rem;
-        letter-spacing: 5px;
-        line-height: 35px;
+        font-size: 1.5rem;
+        letter-spacing: 1.8px;
+        line-height: 38px;
         color: white;
         text-transform: unset;
         text-align: center;
-        line-height: 30px; }
+        line-height: 35px; }
         .about .container .aboutDave p span {
           display: block; }
 
 .pete {
-  background-color: black;
-  padding: 50px 0; }
+  background-image: url("../assets/images/BlackPaintSmudgeRedBgk.png");
+  padding: 50px 0;
+  background-size: cover; }
   .pete .container {
     width: 100%;
     display: flex;
@@ -262,18 +312,60 @@ header {
         width: 50%;
         margin: 0 auto; }
     .pete .container .boxTwo {
-      width: 40%; }
+      width: 55%; }
       .pete .container .boxTwo p {
         font-family: 'Rubik', sans-serif;
         font-weight: 300;
         text-transform: uppercase;
         font-size: 1.5rem;
-        letter-spacing: 5px;
-        line-height: 35px;
+        letter-spacing: 1.8px;
+        line-height: 38px;
         color: white;
         text-align: center; }
         .pete .container .boxTwo p span {
           display: block; }
       .pete .container .boxTwo a img {
-        width: 13%;
+        width: 9%;
         margin: 15px auto; }
+
+footer {
+  padding: 20px 0; }
+  footer .container {
+    display: flex;
+    width: 80%; }
+    footer .container .sponsor,
+    footer .container .copyright {
+      width: 75%; }
+    footer .container .sponsor {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%; }
+      footer .container .sponsor p {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: 1.8px;
+        line-height: 38px;
+        letter-spacing: 1px;
+        font-weight: 400px; }
+      footer .container .sponsor .imgCon img {
+        width: 30%;
+        margin-left: 10px; }
+    footer .container .copyright {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      footer .container .copyright p {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: 1.8px;
+        line-height: 38px;
+        letter-spacing: 1px;
+        font-weight: 400px; }
+      footer .container .copyright .imgCon img {
+        width: 65%;
+        margin: 0 auto; }
